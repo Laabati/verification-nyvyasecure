@@ -1,12 +1,115 @@
-/* reset minimal */
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:sans-serif;color:#333;line-height:1.4;background:#fafafa}
-header{padding:4em 1em;text-align:center;background:#1f1f23;color:#fff}
-header h1{font-size:2em;margin-bottom:0.5em}
-header p{max-width:600px;margin:0 auto 1em}
-.btn{display:inline-block;padding:0.8em 1.2em;background:#4fc3f7;color:#fff;border-radius:4px;text-decoration:none;transition:opacity .2s}
-.btn:hover{opacity:.8}
-main{max-width:800px;margin:2em auto;padding:0 1em}
-#faq, #contact, #legal{margin:2em 0;padding:0 1em}
-#faq h2, #contact h2, #legal h2{margin-bottom:1em;color:#1f1f23}
-footer{background:#fff;padding:2em 0}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: sans-serif;
+  color: #333;
+  line-height: 1.5;
+  background: #fafafa;
+}
+
+/* HERO */
+.hero {
+  padding: 4em 1em;
+  text-align: center;
+  background: #1f1f23;
+  color: #fff;
+}
+.logo-text {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5em;
+}
+.hero h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+.subheading {
+  margin-bottom: 1.5em;
+  font-size: 1.1em;
+}
+
+/* CTA */
+.cta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8em;
+}
+.btn {
+  display: inline-block;
+  padding: 0.8em 1.2em;
+  background: #4fc3f7;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: opacity .2s;
+}
+.btn:hover { opacity: .8; }
+.btn-pay { background: #222; }
+
+/* FORM */
+.form-section {
+  padding: 2em 1em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.form-section form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+}
+.form-section input,
+.form-section select {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.2em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-section button {
+  margin-top: 1em;
+}
+
+/* FAQ */
+.faq {
+  padding: 2em 1em;
+  background: #f9f9f9;
+}
+.faq h2 {
+  text-align: center;
+  margin-bottom: 1em;
+  color: #1f1f23;
+}
+.faq dl {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.faq dt {
+  font-weight: bold;
+  margin-top: 1em;
+}
+.faq dd {
+  margin-left: 1em;
+  margin-bottom: 0.5em;
+}
+
+/* CONTACT & LÉGAL */
+.contact-legal {
+  padding: 2em 1em;
+  background: #fff;
+  color: #333;
+}
+.contact-legal h2 {
+  margin-bottom: 0.5em;
+  color: #1f1f23;
+}
+.contact-legal p {
+  margin-bottom: 0.5em;
+  font-size: 0.95em;
+}
+.contact-legal #legal p {
+  font-size: 0.85em;
+  color: #666;
+}
