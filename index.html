@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Vérification de sécurité NYVYA</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+</head>
+<body style="font-family: system-ui,-apple-system,BlinkMacSystemFont,sans-serif;max-width:600px;margin:0 auto;padding:20px;">
+  <h1>Vérification de sécurité</h1>
 
+  <form action="https://formsubmit.co/nyvya.contact@gmail.com" method="POST">
+    <label>Vous êtes<br />
+      <select name="Type de client" required>
+        <option value="">Sélectionnez</option>
+        <option value="Particulier">Particulier</option>
+        <option value="Professionnel / entreprise">Professionnel / entreprise</option>
+        <option value="Agence">Agence</option>
+      </select>
+    </label>
+    <br /><br />
+
+    <label>Nom du projet / société<br />
+      <input type="text" name="Nom du projet / société" required />
+    </label>
+    <br /><br />
+
+    <label>URL du site à vérifier<br />
+      <input type="url" name="URL du site à vérifier" placeholder="https://example.com" />
+    </label>
+    <br /><br />
+
+    <label>E-mail de contact<br />
+      <input type="email" name="E-mail de contact" required />
+    </label>
+    <br /><br />
+
+    <label>
+      <input type="checkbox" name="Consentement" required />
+      J’accepte la vérification non intrusive ; rien n’est modifié sans accord.
+    </label>
+    <br /><br />
+
+    <input type="hidden" name="_subject" value="Nouvelle demande de vérification NYVYA" />
+    <input type="hidden" name="_autoresponse" value="Merci, votre demande est bien reçue. Je lance la vérification immédiatement. Vous recevrez la preuve dès que la fuite est bloquée, puis la suite pour finaliser la sécurisation." />
+    <input type="hidden" name="_template" value="table" />
+    <input type="hidden" name="_next" value="https://nyvya.carrd.co" />
+
+    <button type="submit" style="padding:12px 20px;font-size:16px;">Envoyer la demande</button>
+  </form>
+
+  <p style="margin-top:30px;font-size:14px;">
+    Après validation, vous recevrez une confirmation par e-mail.
+  </p>
+</body>
+</html>
