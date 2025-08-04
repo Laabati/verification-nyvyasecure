@@ -1,55 +1,42 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <title>Vérification de sécurité NYVYA</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vérification de fuite & audit initial – NYVYA</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body style="font-family: system-ui,-apple-system,BlinkMacSystemFont,sans-serif;max-width:600px;margin:0 auto;padding:20px;">
-  <h1>Vérification de sécurité</h1>
+<body>
+  <header>
+    <h1>Vérification de fuite & audit initial</h1>
+    <p>Je vous révèle s’il y a une fuite de session ou une vulnérabilité en 10 minutes. Analyse non intrusive.</p>
+  </header>
 
-  <form action="https://formsubmit.co/nyvya.contact@gmail.com" method="POST">
-    <label>Vous êtes<br />
-      <select name="Type de client" required>
-        <option value="">Sélectionnez</option>
-        <option value="Particulier">Particulier</option>
-        <option value="Professionnel / entreprise">Professionnel / entreprise</option>
-        <option value="Agence">Agence</option>
-      </select>
-    </label>
-    <br /><br />
+  <main>
+    <section id="hero">
+      <a href="#form" class="btn">Vérifier gratuitement</a>
+    </section>
 
-    <label>Nom du projet / société<br />
-      <input type="text" name="Nom du projet / société" required />
-    </label>
-    <br /><br />
+    <section id="form">
+      <!-- Ici tu intégreras ton formulaire (iframe ou code embed) -->
+    </section>
+  </main>
 
-    <label>URL du site à vérifier<br />
-      <input type="url" name="URL du site à vérifier" placeholder="https://example.com" />
-    </label>
-    <br /><br />
-
-    <label>E-mail de contact<br />
-      <input type="email" name="_replyto" required placeholder="votre@mail.com" />
-    </label>
-    <br /><br />
-
-    <label>
-      <input type="checkbox" name="Consentement" required />
-      J’accepte la vérification non intrusive ; rien n’est modifié sans accord.
-    </label>
-    <br /><br />
-
-    <input type="hidden" name="_subject" value="Nouvelle demande de vérification NYVYA" />
-    <input type="hidden" name="_autoresponse" value="Merci, votre demande est bien reçue. Je lance la vérification immédiatement. Vous recevrez la preuve dès que la fuite est bloquée, puis la suite pour finaliser la sécurisation." />
-    <input type="hidden" name="_template" value="table" />
-    <input type="hidden" name="_next" value="https://nyvya.carrd.co" />
-
-    <button type="submit" style="padding:12px 20px;font-size:16px;">Envoyer la demande</button>
-  </form>
-
-  <p style="margin-top:30px;font-size:14px;">
-    Après validation, vous recevrez une confirmation par e-mail.
-  </p>
+  <footer>
+    <section id="faq">
+      <h2>FAQ</h2>
+      <!-- Questions / réponses -->
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email : nyvya.contact@gmail.com</p>
+      <p>Téléphone : +33 7 45 65 47 12</p>
+    </section>
+    <section id="legal">
+      <h2>Mentions légales & CGV</h2>
+      <p>Anaïs Girard – NYVYA Secure</p>
+      <p>© 2025 NYVYA Secure</p>
+    </section>
+  </footer>
 </body>
 </html>
