@@ -1,0 +1,12 @@
+/* reset minimal */
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:sans-serif;color:#333;line-height:1.4;background:#fafafa}
+header{padding:4em 1em;text-align:center;background:#1f1f23;color:#fff}
+header h1{font-size:2em;margin-bottom:0.5em}
+header p{max-width:600px;margin:0 auto 1em}
+.btn{display:inline-block;padding:0.8em 1.2em;background:#4fc3f7;color:#fff;border-radius:4px;text-decoration:none;transition:opacity .2s}
+.btn:hover{opacity:.8}
+main{max-width:800px;margin:2em auto;padding:0 1em}
+#faq, #contact, #legal{margin:2em 0;padding:0 1em}
+#faq h2, #contact h2, #legal h2{margin-bottom:1em;color:#1f1f23}
+footer{background:#fff;padding:2em 0}
