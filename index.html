@@ -17,7 +17,7 @@
     <p>Intervention unique : renforcement ponctuel à 79 €. Paiement en 2 temps : 60 % à l’engagement, 40 % à la livraison des verrous.</p>
 
     <div class="cta">
-      <a href="form.html" class="btn">Vérifier gratuitement</a>
+      <a href="#formulaire" class="btn">Vérifier gratuitement</a>
       <a href="https://www.paypal.me/nyvyasecure/19.80" target="_blank" class="btn btn-pay">Payer 19,80 € maintenant</a>
     </div>
     <p>Paiement en 3 temps : 19,80 € (20 %) à l’engagement, 29,70 € (30 %) une fois la fuite confirmée bloquée, 49,50 € (50 %) après la mise en place définitive. 👉 Un lien pour chaque paiement vous sera envoyé au bon moment, selon l’avancée de votre demande.</p>
@@ -27,7 +27,44 @@
     </div>
     <p>Paiement en 2 fois : 47,40 € (60 %) à l’engagement et 31,60 € (40 %) après la mise en place définitive.</p>
   </header>
+<section id="formulaire" class="form-section">
+  <h2>Formulaire de demande</h2>
+  <form action="https://formsubmit.co/nyvya.contact@gmail.com" method="POST">
+    <label>Quel est votre statut ?<br>
+      <select name="Statut" required>
+        <option value="">Sélectionnez…</option>
+        <option>Particulier</option>
+        <option>Entreprise / organisation</option>
+        <option>Agence / intégrateur</option>
+        <option>Autre : Consultant en cybersécurité</option>
+      </select>
+    </label>
 
+    <label>Nom du projet / structure concernée<br>
+      <input type="text" name="Nom du projet / structure concernée"
+             placeholder="Nom du site ou de la société" required>
+    </label>
+
+    <label>URL ou point d’entrée à auditer (facultatif)<br>
+      <input type="url" name="URL à auditer" placeholder="https://exemple.com">
+    </label>
+
+    <label>Adresse e-mail de contact principale<br>
+      <input type="email" name="_replyto" placeholder="votre@mail.com" required>
+    </label>
+
+    <label class="checkbox">
+      <input type="checkbox" name="Consentement" required>
+      J’autorise une analyse de sécurité non intrusive, sans modification sans accord préalable.
+    </label>
+
+    <input type="hidden" name="_autoresponse"
+           value="Merci, votre demande est bien reçue. Je lance la vérification immédiatement. Vous aurez le résultat du diagnostic dans les 10 minutes.">
+    <input type="hidden" name="_next" value="#formulaire">
+
+    <button type="submit" class="btn">Envoyer la demande</button>
+  </form>
+</section>
   <!-- CONDITIONS & TARIFS -->
   <section id="services" class="services">
     <h2>CONDITIONS &amp; TRANSPARENCE</h2>
