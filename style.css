@@ -1,32 +1,31 @@
-/* reset minimal */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
   font-family: sans-serif;
   color: #333;
   line-height: 1.5;
-  background: #fafafa;
+  background: #f0f8fa; /* très léger bleu pétrole */
 }
 
-/* HERO */
+/* HERO / INTRO */
 .hero {
   padding: 4em 1em;
   text-align: center;
-  background: linear-gradient(135deg, #1f1f23, #333);
+  background: #01303f; /* bleu pétrole profond */
   color: #fff;
 }
 .logo-text {
   font-size: 2.2rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.5em;
+  letter-spacing: .05em;
+  margin-bottom: .5em;
 }
 .hero h1 {
   font-size: 2em;
-  margin-bottom: 0.5em;
+  margin-bottom: .5em;
 }
 .subheading {
-  margin-bottom: 0.5em;
+  margin-bottom: .5em;
   font-size: 1.2em;
 }
 .intro {
@@ -35,73 +34,72 @@ body {
   font-size: 1em;
 }
 .note {
-  font-size: 0.85em;
-  color: #ccc;
+  font-size: .85em;
+  color: #c4d1d9;
   max-width: 700px;
   margin: 1em auto 0;
 }
-
-/* CTA */
 .cta {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 0.8em;
+  gap: .8em;
   margin-bottom: 1em;
 }
 .btn {
-  padding: 0.8em 1.2em;
+  padding: .8em 1.2em;
   background: #4fc3f7;
   color: #fff;
   border-radius: 4px;
   text-decoration: none;
-  transition: opacity 0.2s;
+  transition: opacity .2s;
 }
-.btn:hover { opacity: 0.8; }
-.btn-pay { background: #222; }
+.btn:hover { opacity: .8; }
+.btn-pay { background: #0a9396; }
 
-/* FORM SECTION */
+/* FORMULAIRE */
 .form-section {
   padding: 2em 1em;
   max-width: 600px;
-  margin: 0 auto;
+  margin: 2em auto;
   background: #fff;
   border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 8px rgba(0,0,0,.1);
 }
 .form-section h2 {
   text-align: center;
   margin-bottom: 1em;
-  color: #1f1f23;
+  color: #01303f;
 }
 .form-section form label {
   display: block;
   font-weight: bold;
-  margin-bottom: 0.3em;
+  margin-bottom: .3em;
 }
 .form-section input,
 .form-section select {
   width: 100%;
-  padding: 0.6em;
+  padding: .6em;
   margin-bottom: 1em;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-.form-section .checkbox {
+.checkbox {
   display: flex;
   align-items: flex-start;
-  gap: 0.5em;
+  gap: .5em;
 }
 .form-section button {
-  display: block;
   width: 100%;
-  padding: 0.8em;
-  background: #4fc3f7;
+  padding: .8em;
+  background: #01303f;
   color: #fff;
   border: none;
   border-radius: 4px;
   font-size: 1em;
+  transition: opacity .2s;
 }
+.form-section button:hover { opacity: .8; }
 
 /* SERVICES & TARIFS */
 .services {
@@ -111,22 +109,21 @@ body {
 .services h2 {
   text-align: center;
   margin-bottom: 1em;
-  color: #1f1f23;
+  color: #01303f;
 }
 .services ul {
   max-width: 700px;
   margin: 0 auto;
   list-style: none;
-  padding-left: 0;
+  padding: 0;
 }
 .services li {
   margin-bottom: 1em;
-  font-size: 1em;
   line-height: 1.4;
 }
 .services li strong {
   display: block;
-  margin-bottom: 0.3em;
+  margin-bottom: .3em;
 }
 
 /* FAQ */
@@ -137,7 +134,7 @@ body {
 .faq h2 {
   text-align: center;
   margin-bottom: 1em;
-  color: #1f1f23;
+  color: #01303f;
 }
 .faq dl {
   max-width: 700px;
@@ -149,25 +146,25 @@ body {
 }
 .faq dd {
   margin-left: 1em;
-  margin-bottom: 0.5em;
+  margin-bottom: .5em;
 }
 
-/* CONTACT & LÉGAL */
+/* À PROPOS & LÉGAL */
 .contact-legal {
   padding: 2em 1em;
   background: #fff;
   color: #333;
 }
 .contact-legal h2 {
-  margin-bottom: 0.5em;
-  color: #1f1f23;
   text-align: center;
+  margin-bottom: .5em;
+  color: #01303f;
 }
 .contact-legal p {
-  margin-bottom: 0.5em;
-  font-size: 0.95em;
+  margin-bottom: .5em;
+  font-size: .95em;
 }
 .contact-legal #legal p {
-  font-size: 0.85em;
+  font-size: .85em;
   color: #666;
 }
