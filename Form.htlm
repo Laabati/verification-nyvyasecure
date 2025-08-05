@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Demande de vérification – NYVYA Secure</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============= FORMULAIRE ============= -->
+  <section class="form-section" id="formulaire">
+    <h2>Formulaire de demande</h2>
+    <form action="https://formsubmit.co/nyvya.contact@gmail.com" method="POST">
+      <label>Quel est votre statut ?<br>
+        <select name="Statut" required>
+          <option value="">Sélectionnez…</option>
+          <option>Particulier</option>
+          <option>Entreprise / organisation</option>
+          <option>Agence / intégrateur</option>
+          <option>Autre : Consultant en cybersécurité</option>
+        </select>
+      </label>
+
+      <label>Nom du projet / structure concernée<br>
+        <input type="text" name="Nom du projet / structure concernée"
+               placeholder="Nom du site ou de la société" required>
+      </label>
+
+      <label>URL ou point d’entrée à auditer (facultatif)<br>
+        <input type="url" name="URL à auditer" placeholder="https://exemple.com">
+      </label>
+
+      <label>Adresse e-mail de contact principale<br>
+        <input type="email" name="_replyto" placeholder="votre@mail.com" required>
+      </label>
+
+      <label class="checkbox">
+        <input type="checkbox" name="Consentement" required>
+        J’autorise une analyse de sécurité non intrusive, sans modification sans accord préalable.
+      </label>
+
+      <!-- 🔒 Message automatique client -->
+      <input type="hidden" name="_autoresponse"
+             value="Merci, votre demande est bien reçue. Je lance la vérification immédiatement. Vous aurez le résultat du diagnostic dans les 10 minutes.">
+      <input type="hidden" name="_next" value="form.html#formulaire">
+
+      <button type="submit" class="btn">Envoyer la demande</button>
+    </form>
+  </section>
+
+</body>
+</html>
