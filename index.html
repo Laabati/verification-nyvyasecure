@@ -74,7 +74,7 @@
 
       <dt>3. Renforcement sur mesure</dt>
       <dd>
-        J’implémente ensuite des verrous de sécurité (règles, correctifs, configurations). Là aussi, un accès à votre environnement est nécessaire pour intégrer et valider ces changements.
+        J’implémente ensuite des verrous de sécurité (règles, correctifs, configurations). Un accès à votre environnement est nécessaire pour intégrer et valider ces changements.
       </dd>
 
       <dt>4. Comment ça se passe ?</dt>
@@ -112,7 +112,7 @@
     <section id="about">
       <h2>👤 À PROPOS</h2>
       <p>👩💼 Anaïs Girard, analyste indépendante en cybersécurité pour NYVYA Secure</p>
-      <p>🔒 Audit express en 10 minutes. Preuve fournie. Analyse non intrusive. Première étape 100 % gratuite.</p>
+      <p>🔒 Audit express en 10 minutes. Preuve fournie. Analyse non intrusive. Étape 1 : 100 % gratuite.</p>
     </section>
     <section id="legal">
       <h2>MENTIONS LÉGALES &amp; CONFIDENTIALITÉ</h2>
@@ -125,9 +125,12 @@
   <!-- ============= FORMULAIRE ============= -->
   <section id="formulaire" class="form-section">
     <h2>Formulaire de demande</h2>
-    <form action="https://formsubmit.co/el/confirm/1305208407735f2dd376ca9531f5e7cd" method="POST">
+    <form action="https://formsubmit.co/nyvya.contact@gmail.com" method="POST">
       <input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_next" value="https://laabati.github.io/verification-nyvyasecure/">
+      <input type="hidden" name="_autoresponse"
+             value="Merci, votre demande est bien reçue. Vous aurez votre diagnostic dans 10 minutes.">
+      <input type="hidden" name="_next" value="https://laabati.github.io/verification-nyvyasecure/">
+
       <label>Quel est votre statut ?<br>
         <select name="Statut" required>
           <option value="">Sélectionnez…</option>
@@ -139,7 +142,8 @@
       </label>
 
       <label>Nom du projet / structure concernée :<br>
-        <input type="text" name="Nom du projet / structure concernée" placeholder="Nom du site ou société" required>
+        <input type="text" name="Nom du projet / structure concernée"
+               placeholder="Nom du site ou société" required>
       </label>
 
       <label>URL ou point d’entrée à auditer (facultatif) :<br>
@@ -154,10 +158,6 @@
         <input type="checkbox" name="Consentement" required>
         J’autorise une analyse non intrusive, sans modification, sans accord préalable.
       </label>
-
-      <input type="hidden" name="_autoresponse"
-             value="Merci, votre demande est bien reçue. Je lance la vérification immédiatement. Vous aurez le résultat du diagnostic dans les 10 minutes.">
-      <input type="hidden" name="_next" value="#formulaire">
 
       <button type="submit" class="btn">Envoyer la demande</button>
     </form>
