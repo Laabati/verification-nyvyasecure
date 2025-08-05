@@ -7,6 +7,33 @@
 #formulaire:target {
   display: block;
 }
+.form-section {
+  padding: 3em 1em;
+  background: #f0fcff;
+}
+.form-section form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.form-section label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+.form-section input,
+.form-section select {
+  padding: .6em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+.form-section .btn {
+  align-self: center;
+  padding: .8em 1.5em;
+}
 body {
   font-family: sans-serif;
   color: #333;
