@@ -1,148 +1,182 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
-/* masquer le formulaire tant qu’on n’a pas cliqué sur #formulaire */
-.form-section {
-  display: none;
-}
-/* afficher le formulaire quand l’ancre #formulaire est ciblée */
-#formulaire:target {
-  display: block;
-}
-.form-section {
-  padding: 3em 1em;
-  background: #f0fcff;
-}
-.form-section form {
-  max-width: 600px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-.form-section label {
-  display: flex;
-  flex-direction: column;
-  font-weight: 500;
-}
-.form-section input,
-.form-section select {
-  padding: .6em;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 100%;
-}
-.form-section .btn {
-  align-self: center;
-  padding: .8em 1.5em;
+/* RESET & GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
   font-family: sans-serif;
-  color: #333;
   line-height: 1.5;
-  background: #01303f; /* bleu pétrole profond en fond */
+  color: #1a1a1a;
+  background: #01303f;            /* bleu pétrole en fond */
 }
 
 /* HERO / INTRO */
 .hero {
-  padding: 4em 1em;
-  text-align: center;
-  background: #014055; /* dégradé léger vers le haut */
+  background: linear-gradient(to top, #01303f, #014055);
   color: #fff;
+  text-align: center;
+  padding: 4rem 1rem;
 }
-.logo-text {
-  font-size: 2.2rem;
+.hero .logo-text {
+  font-size: 2.4rem;
   font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: .05em;
-  margin-bottom: .5em;
+  margin-bottom: .5rem;
 }
 .hero h1 {
-  font-size: 2em;
-  margin-bottom: .5em;
+  font-size: 2.2rem;
+  margin-bottom: .75rem;
 }
-.subheading, .note {
-  font-size: 1.1em;
-  margin-bottom: .5em;
-}
-.intro {
+.hero .subtitle {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
   max-width: 600px;
-  margin: 0 auto 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero p {
+  max-width: 600px;
+  margin: .5rem auto;
 }
 
-/* CTA */
+/* CTA (boutons) */
 .cta {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: .8em;
-  margin-bottom: 1em;
+  gap: 1rem;
+  margin: 1.5rem 0;
 }
 .btn {
-  padding: .8em 1.2em;
-  background: #4fc3f7;
-  color: #fff;
+  display: inline-block;
+  padding: .8rem 1.4rem;
   border-radius: 4px;
   text-decoration: none;
+  color: #fff;
+  background: #4fc3f7;
   transition: opacity .2s;
 }
-.btn:hover { opacity: .8; }
-.btn-pay { background: #0a9396; }
-
-/* SERVICES & TARIFS */
-.services {
-  padding: 3em 1em;
-  background: #e0f7fa;
+.btn:hover {
+  opacity: .8;
 }
-.services h2 {
+.btn-pay {
+  background: #0a9396;
+}
+
+/* NOTES DE PAIEMENT */
+.payment-note {
+  font-size: .9rem;
+  max-width: 600px;
+  margin: .5rem auto 1.5rem;
+  color: #eef5f7;
+  background: rgba(255,255,255,0.1);
+  padding: .75rem;
+  border-radius: 4px;
+}
+
+/* CONDITIONS & TRANSPARENCE */
+.conditions {
+  background: #ffffff;
+  color: #1a1a1a;
+  padding: 2.5rem 1rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 8px;
+}
+.conditions h2 {
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
   color: #014055;
 }
-.services ul {
-  max-width: 700px;
-  margin: 0 auto;
+.conditions ul {
   list-style: none;
-  padding: 0;
+  padding-left: 0;
 }
-.services li {
-  margin-bottom: 1em;
+.conditions li {
+  margin-bottom: 1rem;
   line-height: 1.4;
 }
 
-/* FAQ */
+/* FAQ RAPIDE */
 .faq {
-  padding: 2em 1em;
   background: #e6f2f8;
+  padding: 2rem 1rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 8px;
 }
 .faq h2 {
   text-align: center;
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
   color: #014055;
 }
 .faq dl {
-  max-width: 700px;
   margin: 0 auto;
+  max-width: 700px;
 }
 .faq dt {
   font-weight: bold;
-  margin-top: 1em;
+  margin-top: 1.25rem;
 }
 .faq dd {
-  margin-left: 1em;
-  margin-bottom: .5em;
+  margin-left: 1rem;
+  margin-bottom: .75rem;
 }
 
 /* À PROPOS & LÉGAL */
 .contact-legal {
-  padding: 2em 1em;
-  background: #fff;
-  color: #333;
+  background: #ffffff;
+  color: #1a1a1a;
+  padding: 2rem 1rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 8px;
 }
 .contact-legal h2 {
   text-align: center;
-  margin-bottom: .5em;
+  margin-bottom: 1rem;
   color: #014055;
 }
 .contact-legal p {
-  margin-bottom: .5em;
-  font-size: .95em;
+  margin-bottom: .75rem;
+  font-size: .95rem;
+}
+
+/* FORMULAIRE (cliqué via ancre #formulaire) */
+.form-section {
+  display: none;
+  background: #ffffff;
+  padding: 2.5rem 1rem;
+  margin: 2rem auto 4rem;
+  max-width: 700px;
+  border-radius: 8px;
+}
+#formulaire:target {
+  display: block;
+}
+.form-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #014055;
+}
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.form-section label {
+  font-weight: 500;
+}
+.form-section input,
+.form-section select,
+.form-section textarea {
+  width: 100%;
+  padding: .6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.form-section .btn {
+  align-self: center;
+  margin-top: 1rem;
 }
