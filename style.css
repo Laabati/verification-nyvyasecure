@@ -1,4 +1,12 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
+/* masquer le formulaire tant qu’on n’a pas cliqué sur #formulaire */
+.form-section {
+  display: none;
+}
+/* afficher le formulaire quand l’ancre #formulaire est ciblée */
+#formulaire:target {
+  display: block;
+}
 body {
   font-family: sans-serif;
   color: #333;
@@ -55,7 +63,7 @@ body {
 /* SERVICES & TARIFS */
 .services {
   padding: 3em 1em;
-  background: #f0f8fa;
+  background: #e0f7fa;
 }
 .services h2 {
   text-align: center;
